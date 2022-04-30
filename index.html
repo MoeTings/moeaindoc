@@ -9,16 +9,27 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
+  <nav>
+    <a href="https://i.moea.in">萌.云上存储</a>
+    <a href="https://i.moea.in/help">新版帮助文档</a>
+  </nav>
     <div id="app"></div>
     <script>
         window.$docsify = {
+          search: {
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '没有找到内容',
+        depth: 3,
+      },
             loadSidebar: true,
             subMaxLevel: 3,
             auto2top: true,
-            name: '帮助',
+            name: '萌.云上存储 帮助',
             repo: ''
         }
     </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
